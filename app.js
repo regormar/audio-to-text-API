@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const audioRoutes = require("../audio-to-text-API/api/routes/audioRoutes");
+const audioRoutes = require("./api/routes/audioRoutes");
 
 const app = express();
 const PORT = 3000;
