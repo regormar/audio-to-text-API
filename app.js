@@ -6,11 +6,11 @@ const app = express();
 const PORT = 3000;
 
 
-// Configuración de CORS
+// CORS
 app.use(cors({
-  origin: "*", // Permitir todas las solicitudes. Cambiar según sea necesario.
-  methods: ["GET", "POST"], // Métodos permitidos.
-  allowedHeaders: ["Content-Type", "Authorization"], // Encabezados permitidos.
+  origin: "*", // Allow all requests.
+  methods: ["GET", "POST"], // Allowed methods.
+  allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers.
 }));
 
 // Middleware
@@ -21,5 +21,5 @@ app.use("/audio", audioRoutes);
 
 // Run server
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Server running in http://localhost:${PORT}`);
 });

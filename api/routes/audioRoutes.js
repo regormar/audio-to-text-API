@@ -8,4 +8,7 @@ const upload = multer({ dest: "uploads/" });
 // Endpoint para transcribir audios cargados
 router.post("/transcribe", upload.single("audio"), transcribeAudio);
 
+// TODO
+// Crear un endpoint con la funcionalidad text to speech
+
 module.exports = router;
